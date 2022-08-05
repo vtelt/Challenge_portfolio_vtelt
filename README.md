@@ -1,6 +1,5 @@
 # Challenge_portfolio_vtelt
-> The goal of this challenge: to create a solid foundation of automated tests for an application designed for football scouts.
-> Live demo [_here_](https://github.com/vtelt/Challenge_portfolio_vtelt.git). <!-- If you have the project hosted somewhere, include the link here. -->
+> The goal of this challenge: to create a solid foundation of automated tests using Python for an application designed for football scouts.
 
 ## Table of Contents
 * [General Info](#general-information)
