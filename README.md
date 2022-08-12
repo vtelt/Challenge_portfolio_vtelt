@@ -84,53 +84,6 @@ Hello! I am very happy to participate in portfolio challenge. For me it's a way 
 > //*[@type="submit"]/span[2]
 > 
 > //*[contains(@class, "MuiTouchRipple-root")]
-> 
-> ---
-> 
-> **_Remind password form:_**
-> 
-> ---
-> 
-> **remind_password_heading_xpath**
-> 
-> //*[@id="__next"]/div[1]/div/div[1]/h5
-> 
-> //*[text()="Remind password"]
-> 
-> //*[contains(@class, "MuiTypography-root MuiTypography-h5")]
-> 
-> **email_input_xpath**
-> 
-> //*[@id="__next"]/div[1]/div/div[1]/div/div/input
-> 
-> //*[@name="email"]
-> 
-> //*[@type="text"]
-> 
-> **back_to_sign_in_xpath**
-> 
-> //*[@id="__next"]/div[1]/div/div[1]/a
-> 
-> //*[text()="Back to sign in"]
-> 
-> //*[contains(@class, "MuiTypography-root MuiLink-root")]
-> 
-> **language_dropdown_xpath**
-> 
-> //*[@id="__next"]/div[1]/div/div[2]/div/div
-> 
-> //*[contains(@class, "MuiSelect-root MuiSelect-select")]
-> 
-> //div[@role="button"]
-> 
-> **send_button_xpath**
-> 
-> //*[@id="__next"]/div[1]/div/div[2]/button/span[2]
-> 
-> //*[@type="submit"]/span[2]
-> 
-> //*[contains(@class, "MuiTouchRipple-root")]
-
 
 
 
