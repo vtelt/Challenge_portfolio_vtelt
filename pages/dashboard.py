@@ -2,19 +2,19 @@ from pages.base_page import BasePage
 
 
 class Dashboard(BasePage):
-        scouts_panel_heading_xpath = "//*[@id='__next']/div[1]/header/div/h6"
-        main_page_menu_item_xpath = "//div[contains(@class, 'jss397')]/ul[1]/div[1]/span"
-        players_menu_item_xpath = "//div[contains(@class, 'jss397')]/ul[1]/div[2]/span"
-        languange_menu_item_xpath = "//div[contains(@class, 'jss397')]/ul[2]/div[1]/span"
-        sign_out_menu_item_xpath = "//div[contains(@class, 'jss397')]/ul[2]/div[2]/span"
-        players_get_count_xpath = "//div[contains(@class, 'jss378')]/div[1]/div/div/following-sibling::div/b"
-        matches_get_count_xpath = "//div[contains(@class, 'jss378')]/div[2]/div/div/following-sibling::div/b"
-        reports_get_count_xpath = "//div[contains(@class, 'jss378')]/div[3]/div/div/following-sibling::div/b"
-        events_get_count_xpath = "//div[contains(@class, 'jss378')]/div[4]/div/div/following-sibling::div/b"
+        scouts_panel_heading_xpath = "(//div[contains(@class, 'MuiToolbar-root')])/h6"
+        main_page_menu_item_xpath = "(//ul[contains(@class, 'MuiList-root')])[1]/div[1]/div/span"
+        players_menu_item_xpath = "(//ul[contains(@class, 'MuiList-root')])[1]/div[2]/div/span"
+        languange_menu_item_xpath = "(//ul[contains(@class, 'MuiList-root')])[2]/div[1]/div/span"
+        sign_out_menu_item_xpath = "(//ul[contains(@class, 'MuiList-root')])[2]/div[2]/div/span"
+        players_get_count_xpath = "(//div[contains(@class, 'MuiPaper-root')])[2]/div/b"
+        matches_get_count_xpath = "(//div[contains(@class, 'MuiPaper-root')])[3]/div/b"
+        reports_get_count_xpath = "(//div[contains(@class, 'MuiPaper-root')])[4]/div/b"
+        events_get_count_xpath = "(//div[contains(@class, 'MuiPaper-root')])[5]/div/b"
         dev_team_contact_link_xpath = "//*[contains(@class, 'MuiCardActions-root')]/a"
-        add_player_link_xpath = "//div[contains(@class, 'MuiGrid-root MuiGrid-container')]/div[2]/div/div/a"
-        last_created_player_link_xpath = "//div[contains(@class, 'MuiGrid-root MuiGrid-container')]/div[3]/div/div/a[1]"
-        last_updated_player_link_xpath = "//div[contains(@class, 'MuiGrid-root MuiGrid-container')]/div[3]/div/div/a[2]"
-        last_updated_report_link_xpath = "//div[contains(@class, 'MuiGrid-root MuiGrid-container')]/div[3]/div/div/a[3]"
+        add_player_link_xpath = "(//div[contains(@class, 'MuiPaper-root')])[7]/div/a"
+        last_created_player_link_xpath = "(//div[contains(@class, 'MuiPaper-root')])[8]/div/a[1]"
+        last_updated_player_link_xpath = "(//div[contains(@class, 'MuiPaper-root')])[8]/div/a[2]"
+        last_updated_report_link_xpath = "(//div[contains(@class, 'MuiPaper-root')])[8]/div/a[3]"
 
         pass
