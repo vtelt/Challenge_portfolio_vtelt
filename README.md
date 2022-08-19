@@ -79,11 +79,11 @@ Hello! I am very happy to participate in portfolio challenge. For me it's a way 
 > 
 > **sign_in_button_xpath**
 > 
-> //*[@id="__next"]/form/div/div[2]/button/span[2]
+> //*[@id="__next"]/form/div/div[2]/button/span[1]
 > 
-> //*[@type="submit"]/span[2]
+> //*[@type="submit"]/span[1]
 > 
-> //*[contains(@class, "MuiTouchRipple-root")]
+> //*[contains(@class, "MuiButton-label")]]
 
 
 

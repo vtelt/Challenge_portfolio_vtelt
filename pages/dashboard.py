@@ -1,3 +1,5 @@
+import time
+
 from pages.base_page import BasePage
 
 
@@ -17,4 +19,10 @@ class Dashboard(BasePage):
         last_updated_player_link_xpath = "(//div[contains(@class, 'MuiPaper-root')])[8]/div/a[2]"
         last_updated_report_link_xpath = "(//div[contains(@class, 'MuiPaper-root')])[8]/div/a[3]"
 
-        pass
+        expected_title = "Scouts panel"
+        dashboard_url = "https://scouts-test.futbolkolektyw.pl/"
+
+        def title_of_page(self):
+            time.sleep(4)
+            assert self.get_page_title(self.dashboard_url) == self.expected_title
+
