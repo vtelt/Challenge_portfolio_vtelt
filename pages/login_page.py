@@ -11,8 +11,8 @@ class LoginPage(BasePage):
     dropdown_english_language_xpath = "//li[@data-value='en']"
     sign_in_send_button_xpath = "//*[@type='submit']/span[1]"
     login_url = "https://scouts-test.futbolkolektyw.pl/"
-    expected_title = "Scouts panel - sign in"
-    expected_header = "Scouts Panel"
+    expected_page_title = "Scouts panel - sign in"
+    expected_box_header = "Scouts Panel"
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -24,7 +24,7 @@ class LoginPage(BasePage):
         self.click_on_the_element(self.sign_in_send_button_xpath)
 
     def title_of_page(self):
-        assert self.get_page_title(self.login_url) == self.expected_title
+        assert self.get_page_title(self.login_url) == self.expected_page_title
 
     def title_of_header(self):
-        self.assert_element_text(self.driver, self.scouts_panel_heading_xpath, self.expected_header)
+        self.assert_element_text(self.driver, self.scouts_panel_heading_xpath, self.expected_box_header)
