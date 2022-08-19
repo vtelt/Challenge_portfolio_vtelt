@@ -85,6 +85,8 @@ Hello! I am very happy to participate in portfolio challenge. For me it's a way 
 > 
 > //*[contains(@class, "MuiButton-label")]]
 
+3. First automation test, asserts
+
 
 
 
