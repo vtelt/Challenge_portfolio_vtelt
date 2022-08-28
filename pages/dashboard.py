@@ -23,6 +23,14 @@ class Dashboard(BasePage):
         dashboard_url = "https://scouts-test.futbolkolektyw.pl/"
 
         def title_of_page(self):
-            time.sleep(4)
+            self.wait_for_element_to_be_clickable(self.add_player_link_xpath)
             assert self.get_page_title(self.dashboard_url) == self.expected_title
 
+        def click_on_sign_out_button(self):
+            self.click_on_the_element(self.sign_out_menu_item_xpath)
+
+        def wait_for_sign_out_will_be_visible(self):
+            self.wait_for_element_to_be_visible(self.sign_out_menu_item_xpath)
+
+        def click_on_add_player(self):
+            self.click_on_the_element(self.add_player_link_xpath)
