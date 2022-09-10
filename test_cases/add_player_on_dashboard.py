@@ -18,7 +18,7 @@ class TestDashboardPage(unittest.TestCase):
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en') #open the website
+        self.driver.get('https://scouts.futbolkolektyw.pl/en/') #open the website
         self.driver.fullscreen_window() #open a browser in full size mode
         self.driver.implicitly_wait(IMPLICITLY_WAIT) #wait before you start testing
         self.name = "David"

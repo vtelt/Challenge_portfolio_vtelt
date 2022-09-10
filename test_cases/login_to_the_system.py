@@ -17,7 +17,7 @@ class TestLoginPage(unittest.TestCase):
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en') #open the website
+        self.driver.get('https://scouts.futbolkolektyw.pl/en/') #open the website
         self.driver.fullscreen_window() #open a browser in full size mode
         self.driver.implicitly_wait(IMPLICITLY_WAIT) #wait before you start testing
         self.user_login = LoginPage(self.driver)
@@ -44,6 +44,7 @@ class TestLoginPage(unittest.TestCase):
 
     def test_log_out(self):
         self.user_login.do_login('user01@getnada.com', 'Test-1234') #login to the system
+        self.dashboard_page.title_of_page()  # check if the title of the opened page is correct
         self.dashboard_page.wait_for_sign_out_will_be_visible() #wait for the menu item to be visible
         self.dashboard_page.click_on_sign_out_button() #log out
         self.user_login.title_of_page() #check that user is on the login page
