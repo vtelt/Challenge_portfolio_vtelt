@@ -29,6 +29,7 @@ class TestDashboardPage(unittest.TestCase):
         user_login = LoginPage(self.driver)
         user_login.do_login('user01@getnada.com', 'Test-1234') #login to the system
         dashboard_page = Dashboard(self.driver)
+        dashboard_page.wait_for_add_player_will_be_visible() #wait for the link to be visible
         dashboard_page.click_on_add_player() #click on add player link
         add_player = AddPlayer(self.driver)
         add_player.type_to_name(self.name) #enter name of the player

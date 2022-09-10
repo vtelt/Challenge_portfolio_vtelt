@@ -20,7 +20,7 @@ class Dashboard(BasePage):
         last_updated_report_link_xpath = "(//div[contains(@class, 'MuiPaper-root')])[8]/div/a[3]"
 
         expected_title = "Scouts panel"
-        dashboard_url = "https://scouts-test.futbolkolektyw.pl/"
+        dashboard_url = "https://scouts.futbolkolektyw.pl/en/"
 
         def title_of_page(self):
             self.wait_for_element_to_be_clickable(self.add_player_link_xpath)
@@ -31,6 +31,9 @@ class Dashboard(BasePage):
 
         def wait_for_sign_out_will_be_visible(self):
             self.wait_for_element_to_be_visible(self.sign_out_menu_item_xpath)
+
+        def wait_for_add_player_will_be_visible(self):
+            self.click_on_the_element(self.add_player_link_xpath)
 
         def click_on_add_player(self):
             self.click_on_the_element(self.add_player_link_xpath)

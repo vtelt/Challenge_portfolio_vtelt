@@ -13,7 +13,7 @@ class LoginPage(BasePage):
     dropdown_polish_language_xpath = "//li[@data-value='pl']"
     dropdown_english_language_xpath = "//li[@data-value='en']"
     sign_in_send_button_xpath = "//*[@type='submit']/span[1]"
-    login_url = "https://scouts-test.futbolkolektyw.pl/"
+    login_url = "https://scouts.futbolkolektyw.pl/en/"
     expected_page_title = "Scouts panel - sign in"
     expected_box_header = "Scouts Panel"
     incorrect_login_message_xpath = "//span[contains(@class, 'MuiTypography-root')]"
